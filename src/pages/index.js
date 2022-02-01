@@ -1,64 +1,41 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+      <div>
+        <h2>
+        Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
+        </h2>
+        <p>
+        Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.
+        </p>
+        <button>Hubungi kami</button>
+      </div>
+      <div>
+        <h2>
+        Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
+        </h2>
+        <p>
+        Rumitnya proses persiapan pembelajaran pada media daring mengurangi tingkat efektivitas guru dalam menyampaikan ilmunya. Kami dapat mempersingkat waktu dan menghemat tenaga anda agar ilmu dapat langsung disampaikan. Kolaborasi antara guru dan bitlearn akan menghasilkan ekosistem belajar yang sempurna, hemat waktu dan ramah pengguna.
+        </p>
+      </div>
+      <div>
+        <h2>
+        Selalu menggunakan teknologi terkini dari Google, mengikuti perkembangan zaman
+        </h2>
+        <p>
+        Tanpa perlu repot memasukkan bahan ajar satu persatu, guru hanya perlu memberikan rencana pembelajaran. Bitlearn akan menyediakan ruang kelasnya. Pengajaran multi kelas menjadi lebih mudah dan tidak repot.
+        </p>
+      </div>
+      
     </Layout>
   )
 }
