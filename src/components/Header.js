@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import logo from '/src/images/gatsby-icon.png'
 
 const navigation = [
   { name: 'Layanan', to: '#', current: false },
@@ -16,20 +15,16 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <div>
-      <Disclosure as="nav" className="">
+      <Disclosure as="nav" className="bg-gray-300">
         {({ open }) => (
           <>
-            <div className="max-w-6xl mx-auto mt-6 px-2 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
               <div className="relative flex items-center justify-left h-24">
 
                 <div className="flex flex-1 sm:justify-start align-middle">
-                  <div className="flex-none">
+                  <div className="flex flex-none">
                     <Link to="/">
-                      <img
-                        className="inline mx-4 h-16 w-16"
-                        src={logo}
-                        alt="Logo"
-                      />
+                      <p className="text-3xl font-bold inline">Bitlearn</p>
                     </Link>
                   </div>
 
@@ -42,7 +37,7 @@ export default function Header() {
                             to={item.to}
                             className={classNames(
                               item.current ? 'bg-gray-900 text-white' : 'text-gray-800 hover:bg-gray-200',
-                              'px-3 py-2 my-auto rounded-md text-base uppercase items-center font-semibold tracking-wider'
+                              'px-3 py-2 my-auto rounded-md text-center text-base uppercase items-center font-semibold tracking-wider'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
@@ -52,7 +47,6 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
-                  
                 </div>
 
                 <div className="flex-none sm:hidden">
@@ -77,7 +71,7 @@ export default function Header() {
                     to={item.to}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'flex text-gray-800 hover:bg-gray-200',
-                      'inline px-3 py-2 rounded-md text-base font-medium'
+                      'inline px-3 py-2 rounded-md align-center text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
