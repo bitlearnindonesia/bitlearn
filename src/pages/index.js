@@ -53,6 +53,13 @@ const BlogIndex = ({ data, location }) => {
           <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
           Produk yang Kami Kelola
           </h2>
+          <div className="grid grid-cols-5 gap-2">
+            <img src={placeholder} className="" alt="placeholder"/>
+            <img src={placeholder} className="" alt="placeholder"/>
+            <img src={placeholder} className="" alt="placeholder"/>
+            <img src={placeholder} className="" alt="placeholder"/>
+            <img src={placeholder} className="" alt="placeholder"/>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
             <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
               <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Classroom</h3>
