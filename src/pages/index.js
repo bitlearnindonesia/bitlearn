@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -13,18 +13,18 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Bitlearn" />
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-24">
         {/* CTA */}
-        <div className="container mx-auto text-center px-4 py-36 space-y-12 max-w-4xl">
+        <div className="mx-auto text-center px-4 pt-36 space-y-12 max-w-4xl">
           <h2 className="md:text-4xl text-3xl text-center font-bold mb-8">
           Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
           </h2>
           <p className="text-xl">Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.</p>
-          <button className="bg-gray-300 text-gray-800 text-lg sm:text-md font-bold my-8 py-2 px-4">Hubungi kami</button>
+          <button className="bg-gray-300 text-gray-800 text-lg sm:text-md font-bold my-8 py-2 px-4"><Link to="/#contact">Hubungi kami</Link></button>
         </div>
 
         {/* Features 1 */}
-        <div  className="grid grid-cols-2 sm:grid-cols-6 px-6 py-24 items-center">
+        <div  className="grid grid-cols-2 sm:grid-cols-6 p-6 items-center">
           <div className="sm:hidden col-span-2 items-center">
             <img src={placeholder} className="block w-48 mx-auto" alt="placeholder"/>
           </div>
@@ -38,7 +38,7 @@ const BlogIndex = ({ data, location }) => {
         </div>
 
         {/* Features 2 */}
-        <div  className="grid grid-cols-2 sm:grid-cols-6 px-6 py-24 items-center">
+        <div  className="grid grid-cols-2 sm:grid-cols-6 p-6 items-center">
           <div className="col-span-2 items-center">
             <img src={placeholder} className="block w-48 mx-auto sm:ml-0" alt="placeholder"/>
           </div>
