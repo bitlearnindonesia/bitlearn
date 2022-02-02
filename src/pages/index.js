@@ -79,6 +79,22 @@ const BlogIndex = ({ data, location }) => {
             <div></div>
           </div>
         </div>
+
+        {/* Contact section */}
+        <div className="grid grid-cols-6 px-6 py-24 border-2 border-black">
+          <div className="col-span-2">
+          </div>
+          <div className="col-span-4">
+            <h2 className="md:text-3xl text-2xl font-bold my-4">
+              Tertarik bekerja sama dengan kami?
+            </h2>
+            <ul>
+              <li>Figo Muhammad</li>
+              <li>+62 815 1702 1248</li>
+              <li>figomuhammad9@protonmail.com</li>
+            </ul>
+          </div>
+        </div>
       </div>
       
     </Layout>
