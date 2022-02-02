@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 import placeholder from '/src/images/placeholder.png'
 
-const BlogIndex = ({ data, location }) => {
+const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
@@ -114,7 +114,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {
