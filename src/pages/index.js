@@ -4,36 +4,81 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import placeholder from '/src/images/placeholder.png'
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <div className="mx-auto">
-        <h2 className="md:text-6xl text-3xl text-center font-bold mb-8">
-        Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
-        </h2>
-        <p className="">
-        Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.
-        </p>
-        <button className="bg-gray-300 text-gray-800 text-sm sm:text-md font-bold my-8 py-2 px-4 rounded">Hubungi kami</button>
-      </div>
-      <div>
-        <h2 className="md:text-6xl text-3xl text-center font-bold my-4">
-        Menghemat tenaga dan waktu agar bisa lebih fokus dalam mendidik
-        </h2>
-        <p>
-        Rumitnya proses persiapan pembelajaran pada media daring mengurangi tingkat efektivitas guru dalam menyampaikan ilmunya. Kami dapat mempersingkat waktu dan menghemat tenaga anda agar ilmu dapat langsung disampaikan. Kolaborasi antara guru dan bitlearn akan menghasilkan ekosistem belajar yang sempurna, hemat waktu dan ramah pengguna.
-        </p>
-      </div>
-      <div>
-        <h2 className="md:text-6xl text-3xl text-center font-bold my-4">
-        Selalu menggunakan teknologi terkini dari Google, mengikuti perkembangan zaman
-        </h2>
-        <p>
-        Tanpa perlu repot memasukkan bahan ajar satu persatu, guru hanya perlu memberikan rencana pembelajaran. Bitlearn akan menyediakan ruang kelasnya. Pengajaran multi kelas menjadi lebih mudah dan tidak repot.
-        </p>
+      <Seo title="Bitlearn" />
+
+      <div className="grid grid-cols-1 gap-6">
+        {/* CTA */}
+        <div className="container mx-auto text-center px-4 py-6">
+          <h2 className="md:text-4xl text-3xl text-center font-bold mb-8">
+          Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
+          </h2>
+          <p className="">
+          Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.
+          </p>
+          <button className="bg-gray-300 text-gray-800 text-sm sm:text-md font-bold my-8 py-2 px-4 rounded">Hubungi kami</button>
+        </div>
+
+        <div>
+          <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
+          Menghemat tenaga dan waktu agar bisa lebih fokus dalam mendidik
+          </h2>
+          <p>
+          Rumitnya proses persiapan pembelajaran pada media daring mengurangi tingkat efektivitas guru dalam menyampaikan ilmunya. Kami dapat mempersingkat waktu dan menghemat tenaga anda agar ilmu dapat langsung disampaikan. Kolaborasi antara guru dan bitlearn akan menghasilkan ekosistem belajar yang sempurna, hemat waktu dan ramah pengguna.
+          </p>
+        </div>
+        <div>
+          <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
+          Selalu menggunakan teknologi terkini dari Google, mengikuti perkembangan zaman
+          </h2>
+          <p>
+          Tanpa perlu repot memasukkan bahan ajar satu persatu, guru hanya perlu memberikan rencana pembelajaran. Bitlearn akan menyediakan ruang kelasnya. Pengajaran multi kelas menjadi lebih mudah dan tidak repot.
+          </p>
+        </div>
+
+        {/* Product showcase section */}
+        <div className="p-6 space-y-6">
+          <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
+          Produk yang Kami Kelola
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
+            <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
+              <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Classroom</h3>
+              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <p>Ruang kelas utama anda. Disini anda dapat memindahkan seluruh kegiatan di kelas menjadi daring. Tidak perlu repot mengisi absen, semua akan terekam secara otomatis.</p>
+            </div>
+            <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
+              <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Drive</h3>
+              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <p>Perpustakaan untuk murid anda. Disini anda dapat memberikan modul, buku, bahkan video pembelajaran yang mampu meningkatkan keseruan belajar.</p>
+            </div>
+            <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
+              <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Meet</h3>
+              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <p>Pengajaran tatap muka sekarang bisa dilakukan lewat layar gawai anda. Pembelajaran dapat dilakukan secara sinkron seperti di ruang kelas konvensional.</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
+            <div className="hidden sm:grid"></div>
+            <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
+              <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Form</h3>
+              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <p>Tanpa menggunakan kertas, tanpa menggunakan pensil. Pengambilan nilai dapat anda lakukan menggunakan google form, tentunya secara aman dan bebas dari kecurangan.</p>
+            </div>
+            <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
+              <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Calendar</h3>
+              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <p>Jadwalkan seluruh kegiatan kelas secara terpadu. Siswa dapat memantau jadwal kelas,  batas akhir pengumpulan tugas, dan jadwal ujian tanpa repot.</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
       </div>
       
     </Layout>
