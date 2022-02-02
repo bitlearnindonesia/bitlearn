@@ -49,11 +49,11 @@ const BlogIndex = ({ data, location }) => {
         </div>
 
         {/* Product showcase section */}
-        <div className="p-6 space-y-6">
+        <div className="p-6 space-y-6" id='products'>
           <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
           Produk yang Kami Kelola
           </h2>
-          <div className="grid grid-cols-5 gap-2">
+          <div className="sm:hidden grid grid-cols-5 gap-2">
             <img src={placeholder} className="" alt="placeholder"/>
             <img src={placeholder} className="" alt="placeholder"/>
             <img src={placeholder} className="" alt="placeholder"/>

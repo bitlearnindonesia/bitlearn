@@ -6,8 +6,8 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import placeholder from '/src/images/placeholder.png'
 
 const navigation = [
-  { name: 'Layanan', to: '#', current: false },
-  { name: 'Tentang Kami', to: '#', current: false },
+  { name: 'Layanan', to: '/#products', current: false },
+  { name: 'Tentang Kami', to: '/#about', current: false },
 ]
 
 function classNames(...classes) {

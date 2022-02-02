@@ -25,8 +25,10 @@ const Footer = () => {
           </li>
         </ul>
         <img src={placeholder} className="col-span-2 w-36 sm:w-48 py-12 mx-auto" alt="placeholder"/>
-        <div className="sm:hidden col-span-2 text-xl text-center font-bold py-4">Tentang Bitlearn</div>
-        <div className="col-span-2 sm:col-span-4 text-lg text-justify">Kami memiliki tujuan dasar untuk membantu pendidikan di Indonesia menjadi lebih baik. Menggunakan teknologi, kami berharap dapat membantu guru untuk memberikan pelajaran dengan lebih mudah agar murid dapat menyerap ilmu dengan yang diajarkan lebih sempurna.</div>
+        <div className='col-span-2 sm:col-span-4' id='about'>
+          <div className="sm:hidden text-xl text-center font-bold py-4">Tentang Bitlearn</div>
+          <div className="text-lg text-justify">Kami memiliki tujuan dasar untuk membantu pendidikan di Indonesia menjadi lebih baik. Menggunakan teknologi, kami berharap dapat membantu guru untuk memberikan pelajaran dengan lebih mudah agar murid dapat menyerap ilmu dengan yang diajarkan lebih sempurna.</div>
+        </div>
         <div className="sm:hidden col-span-2 text-center text-sm mt-8">© {new Date().getFullYear()} Tim Bitlearn. All Rights Reserved</div>
       </main>
     </body>
