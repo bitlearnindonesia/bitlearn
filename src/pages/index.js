@@ -24,24 +24,27 @@ const BlogIndex = ({ data, location }) => {
         </div>
 
         {/* Features 1 */}
-        <div  className="grid grid-cols-6 px-6 py-24 items-center">
+        <div  className="grid grid-cols-2 sm:grid-cols-6 px-6 py-24 items-center">
+          <div className="sm:hidden col-span-2 items-center">
+            <img src={placeholder} className="block w-48 mx-auto" alt="placeholder"/>
+          </div>
           <div className="col-span-4">
             <h2 className="md:text-4xl text-3xl text-center sm:text-left font-bold my-4">Menghemat tenaga dan waktu agar bisa lebih fokus dalam mendidik</h2>
-            <p>Rumitnya proses persiapan pembelajaran pada media daring mengurangi tingkat efektivitas guru dalam menyampaikan ilmunya. Kami dapat mempersingkat waktu dan menghemat tenaga anda agar ilmu dapat langsung disampaikan. Kolaborasi antara guru dan bitlearn akan menghasilkan ekosistem belajar yang sempurna, hemat waktu dan ramah pengguna.</p>
+            <p className="text-lg">Rumitnya proses persiapan pembelajaran pada media daring mengurangi tingkat efektivitas guru dalam menyampaikan ilmunya. Kami dapat mempersingkat waktu dan menghemat tenaga anda agar ilmu dapat langsung disampaikan. Kolaborasi antara guru dan bitlearn akan menghasilkan ekosistem belajar yang sempurna, hemat waktu dan ramah pengguna.</p>
           </div>
           <div className="col-span-2 items-center">
-            <img src={placeholder} className="block w-48 ml-auto" alt="placeholder"/>
+            <img src={placeholder} className="hidden sm:block w-48 ml-auto" alt="placeholder"/>
           </div>
         </div>
 
         {/* Features 2 */}
-        <div  className="grid grid-cols-6 px-6 py-24 items-center">
+        <div  className="grid grid-cols-2 sm:grid-cols-6 px-6 py-24 items-center">
           <div className="col-span-2 items-center">
-            <img src={placeholder} className="block w-48 mr-auto" alt="placeholder"/>
+            <img src={placeholder} className="block w-48 mx-auto sm:ml-0" alt="placeholder"/>
           </div>
           <div className="col-span-4">
-            <h2 className="md:text-4xl text-3xl text-center sm:text-left font-bold my-4">Selalu menggunakan teknologi terkini dari Google, mengikuti perkembangan zaman</h2>
-            <p>Tanpa perlu repot memasukkan bahan ajar satu persatu, guru hanya perlu memberikan rencana pembelajaran. Bitlearn akan menyediakan ruang kelasnya. Pengajaran multi kelas menjadi lebih mudah dan tidak repot.</p>
+            <h2 className="md:text-4xl text-2xl text-center sm:text-left font-bold my-4">Selalu menggunakan teknologi terkini dari Google, mengikuti perkembangan zaman</h2>
+            <p className="text-lg">Tanpa perlu repot memasukkan bahan ajar satu persatu, guru hanya perlu memberikan rencana pembelajaran. Bitlearn akan menyediakan ruang kelasnya. Pengajaran multi kelas menjadi lebih mudah dan tidak repot.</p>
           </div>
         </div>
 
@@ -84,7 +87,7 @@ const BlogIndex = ({ data, location }) => {
         </div>
 
         {/* Contact section */}
-        <div className="grid grid-cols-6 px-6 py-24 border-2 border-black">
+        <div className="hidden sm:grid grid-cols-6 px-6 py-24 border-2 border-black">
           <div className="col-span-2">
           </div>
           <div className="col-span-4">
