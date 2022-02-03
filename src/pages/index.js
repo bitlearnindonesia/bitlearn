@@ -21,7 +21,7 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Bitlearn" />
 
-      <div className="grid grid-cols-1 gap-48">
+      <div className="grid grid-cols-1 gap-36">
         {/* CTA */}
         <div className="bg-gray-100">
           <div className="grid grid-cols-6 items-end mx-auto py-12 sm:py-36 space-y-12 max-w-6xl">
@@ -65,46 +65,39 @@ const Index = ({ data, location }) => {
         </div>
 
         {/* Product showcase section */}
-        <div className="bg-gray-100 p-6 space-y-6" id='products'>
+        <div className="bg-gray-100 px-6 py-32 space-y-6" id='products'>
           <div className="max-w-6xl mx-auto">
             <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
             Produk yang Kami Kelola
             </h2>
-            <div className="sm:hidden grid grid-cols-5 gap-3 items-center">
-              <img src={gclassroom} className="w-full" alt="google classroom"/>
-              <img src={gdrive} className="w-full" alt="google drive"/>
-              <img src={gmeet} className="w-full" alt="google meet"/>
-              <img src={gforms} className="h-3/4 mx-auto" alt="google form"/>
-              <img src={gcalendar} className="h-3/4 mx-auto" alt="google calendar"/>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
-              <div className="col-span-2 text-center items-center bg-white p-8 space-y-4">
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 py-6">
+              <div className="col-span-2 text-center items-center bg-white px-8 py-16 space-y-12 rounded-2xl">
                 <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Classroom</h3>
                 <img src={gclassroom} className="w-32 mx-auto" alt="google classroom"/>
-                <p className="text-justify">Ruang kelas utama anda. Disini anda dapat memindahkan seluruh kegiatan di kelas menjadi daring. Tidak perlu repot mengisi absen, semua akan terekam secara otomatis.</p>
+                <p className="text-center">Ruang kelas utama anda. Disini anda dapat memindahkan seluruh kegiatan di kelas menjadi daring. Tidak perlu repot mengisi absen, semua akan terekam secara otomatis.</p>
               </div>
-              <div className="col-span-2 text-center bg-white p-8 space-y-4">
+              <div className="col-span-2 text-center bg-white px-8 py-16 space-y-12 rounded-2xl">
                 <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Drive</h3>
                 <img src={gdrive} className="w-32 mx-auto" alt="google drive"/>
-                <p className="text-justify">Perpustakaan untuk murid anda. Disini anda dapat memberikan modul, buku, bahkan video pembelajaran yang mampu meningkatkan keseruan belajar.</p>
+                <p className="text-center">Perpustakaan untuk murid anda. Disini anda dapat memberikan modul, buku, bahkan video pembelajaran yang mampu meningkatkan keseruan belajar.</p>
               </div>
-              <div className="col-span-2 text-center bg-white p-8 space-y-4">
+              <div className="col-span-2 text-center bg-white px-8 py-16 space-y-12 rounded-2xl">
                 <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Meet</h3>
                 <img src={gmeet} className="w-32 mx-auto" alt="google meet"/>
-                <p className="text-justify">Pengajaran tatap muka sekarang bisa dilakukan lewat layar gawai anda. Pembelajaran dapat dilakukan secara sinkron seperti di ruang kelas konvensional.</p>
+                <p className="text-center">Pengajaran tatap muka sekarang bisa dilakukan lewat layar gawai anda. Pembelajaran dapat dilakukan secara sinkron seperti di ruang kelas konvensional.</p>
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
               <div className="hidden sm:grid"></div>
-              <div className="col-span-2 text-center bg-white p-8 space-y-4">
+              <div className="col-span-2 text-center bg-white px-8 py-16 space-y-12 rounded-2xl">
                 <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Form</h3>
                 <img src={gforms} className="w-24 mx-auto" alt="google form"/>
-                <p className="text-justify">Tanpa menggunakan kertas, tanpa menggunakan pensil. Pengambilan nilai dapat anda lakukan menggunakan google form, tentunya secara aman dan bebas dari kecurangan.</p>
+                <p className="text-center">Tanpa menggunakan kertas, tanpa menggunakan pensil. Pengambilan nilai dapat anda lakukan menggunakan google form, tentunya secara aman dan bebas dari kecurangan.</p>
               </div>
-              <div className="col-span-2 text-center bg-white p-8 space-y-4">
+              <div className="col-span-2 text-center bg-white px-8 py-16 space-y-12 rounded-2xl">
                 <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Calendar</h3>
                 <img src={gcalendar} className="w-32 mx-auto" alt="google calendar"/>
-                <p className="text-justify">Jadwalkan seluruh kegiatan kelas secara terpadu. Siswa dapat memantau jadwal kelas,  batas akhir pengumpulan tugas, dan jadwal ujian tanpa repot.</p>
+                <p className="text-center">Jadwalkan seluruh kegiatan kelas secara terpadu. Siswa dapat memantau jadwal kelas,  batas akhir pengumpulan tugas, dan jadwal ujian tanpa repot.</p>
               </div>
               <div></div>
             </div>
@@ -113,11 +106,9 @@ const Index = ({ data, location }) => {
         </div>
 
         {/* Contact section */}
-        <div className="hidden sm:grid grid-cols-6 px-6 py-24 border-2 border-black">
-          <div className="col-span-2">
-          </div>
-          <div className="col-span-4">
-            <h2 className="md:text-3xl text-2xl font-bold my-4">
+        <div className="hidden sm:grid grid-cols-6 max-w-6xl px-6 pb-36 mx-auto">
+          <div className="col-span-3">
+            <h2 className="md:text-3xl text-2xl text-primary font-bold my-4">
               Tertarik bekerja sama dengan kami?
             </h2>
             <ul>
@@ -125,6 +116,9 @@ const Index = ({ data, location }) => {
               <li>+62 815 1702 1248</li>
               <li>figomuhammad9@protonmail.com</li>
             </ul>
+          </div>
+          <div className="col-span-3">
+
           </div>
         </div>
       </div>
