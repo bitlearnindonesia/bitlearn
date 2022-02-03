@@ -9,7 +9,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <body className="bg-white">
       <Header/>
-      <main className="max-w-6xl mx-auto md:px-6 px-4 py-8 font-sans">{children}</main>
+      <main className="mx-auto md:px-0 px-4 font-sans">{children}</main>
       <Footer/>
     </body>
   )

@@ -17,10 +17,10 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <div>
-      <Disclosure as="nav" className="bg-gray-200">
+      <Disclosure as="nav" className="bg-gray-100">
         {({ open }) => (
           <>
-            <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
               <div className="relative flex items-center justify-start h-16">
 
                 <div className="flex flex-1 sm:justify-start align-middle">

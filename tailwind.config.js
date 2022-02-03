@@ -5,6 +5,12 @@ module.exports = {
       fontFamily: {
         sans: ['Work Sans', 'sans-serif'],
       },
+      colors: {
+        primary: '#064635',
+        secondary: '#519259',
+        accent1: '#F0BB62',
+        accent2: '#F4EEA9',
+      },
     },
   },
   plugins: [
