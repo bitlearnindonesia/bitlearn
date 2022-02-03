@@ -24,7 +24,7 @@ export default function Header() {
               <div className="relative flex items-center justify-start h-16">
 
                 <div className="flex flex-1 sm:justify-start align-middle">
-                  <div className="flex flex-1 items-center justify-center sm:justify-start">
+                  <div className="flex flex-1 items-center justify-start">
                     <img src={placeholder} className="w-8 h-8 mx-4" alt="placeholder"/>
                     <Link to="/">
                       <p className="text-3xl font-bold">Bitlearn</p>
@@ -67,14 +67,14 @@ export default function Header() {
             </div>
 
             <Disclosure.Panel className="sm:hidden">
-              <div className="border-t-2 border-black">
+              <div className="bg-white px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.to}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-800 hover:bg-gray-200',
-                      'flex px-3 py-2 justify-center text-base font-bold border-b-2 border-black'
+                      item.current ? 'bg-gray-900 text-white' : 'flex text-gray-800 hover:bg-gray-200',
+                      'inline px-3 py-2 rounded-md text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
