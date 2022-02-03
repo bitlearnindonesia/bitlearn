@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import placeholder from '/src/images/placeholder.png'
 import cta from '/src/images/cta.svg'
 import feature1 from '/src/images/feature1.svg'
 import feature2 from '/src/images/feature2.svg'
@@ -21,16 +20,16 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Bitlearn" />
 
-      <div className="grid grid-cols-1 gap-36">
+      <div className="grid grid-cols-1 gap-16 sm:gap-36">
         {/* CTA */}
         <div className="bg-gray-100">
-          <div className="grid grid-cols-6 items-end mx-auto py-12 sm:py-36 space-y-12 max-w-6xl">
-            <div className="col-span-4">
-              <h2 className="md:text-3xl text-2xl font-bold mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-6 items-end mx-auto px-4 py-12 sm:py-36 space-y-12 max-w-6xl">
+            <div className="col-span-2 sm:col-span-4">
+              <h2 className="sm:text-3xl text-2xl font-bold mb-8">
               Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
               </h2>
-              <p className="text-lg">Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.</p>
-              <button className="bg-primary hover:bg-secondary text-white text-lg sm:text-md font-medium my-8 py-2 px-4 rounded-lg"><Link to="/#contact">Hubungi kami</Link></button>
+              <p className="text-sm sm:text-lg">Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.</p>
+              <button className="bg-primary hover:bg-secondary text-white text-md sm:text-md font-medium my-8 py-2 px-4 rounded-lg"><Link to="/#contact">Hubungi kami</Link></button>
             </div>
             <div className="col-span-2">
               <img src={cta} className="hidden sm:block w-full ml-auto" alt="cta"/>
@@ -65,7 +64,7 @@ const Index = ({ data, location }) => {
         </div>
 
         {/* Product showcase section */}
-        <div className="bg-gray-100 px-6 py-32 space-y-6" id='products'>
+        <div className="bg-gray-100 px-6 py-16 space-y-6" id='products'>
           <div className="max-w-6xl mx-auto">
             <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
             Produk yang Kami Kelola

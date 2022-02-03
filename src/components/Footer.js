@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </main>
       </div>
-      <div className="bg-primary text-white text-center text-sm">© {new Date().getFullYear()} Tim Bitlearn. All Rights Reserved</div>
+      <div className="bg-primary text-white text-center text-sm py-2">© {new Date().getFullYear()} Tim Bitlearn. All Rights Reserved</div>
     </body>
   )
 }
