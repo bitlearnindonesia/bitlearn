@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Work Sans', 'sans-serif'],
+        sans: ['DM Sans', 'sans-serif'],
       },
       colors: {
         primary: '#064635',

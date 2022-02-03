@@ -129,7 +129,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Work Sans']
+          families: ['DM Sans']
         }
       }
     },
