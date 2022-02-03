@@ -5,6 +5,11 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import placeholder from '/src/images/placeholder.png'
+import gcalendar from '/src/images/calendar.svg'
+import gclassroom from '/src/images/classroom.svg'
+import gdrive from '/src/images/drive.svg'
+import gforms from '/src/images/forms.svg'
+import gmeet from '/src/images/meet.svg'
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -13,7 +18,7 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Bitlearn" />
 
-      <div className="grid grid-cols-1 gap-24">
+      <div className="grid grid-cols-1 gap-24 scroll-smooth">
         {/* CTA */}
         <div className="mx-auto text-center px-4 pt-12 sm:pt-36 space-y-12 max-w-4xl">
           <h2 className="md:text-4xl text-3xl sm:text-center font-bold mb-8">
@@ -53,27 +58,27 @@ const Index = ({ data, location }) => {
           <h2 className="md:text-4xl text-3xl text-center font-bold my-4">
           Produk yang Kami Kelola
           </h2>
-          <div className="sm:hidden grid grid-cols-5 gap-2">
-            <img src={placeholder} className="" alt="placeholder"/>
-            <img src={placeholder} className="" alt="placeholder"/>
-            <img src={placeholder} className="" alt="placeholder"/>
-            <img src={placeholder} className="" alt="placeholder"/>
-            <img src={placeholder} className="" alt="placeholder"/>
+          <div className="sm:hidden grid grid-cols-5 gap-3 items-center">
+            <img src={gclassroom} className="w-full" alt="google classroom"/>
+            <img src={gdrive} className="w-full" alt="google drive"/>
+            <img src={gmeet} className="w-full" alt="google meet"/>
+            <img src={gforms} className="h-3/4 mx-auto" alt="google form"/>
+            <img src={gcalendar} className="h-3/4 mx-auto" alt="google calendar"/>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
-            <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
+            <div className="col-span-2 text-center items-center p-8 space-y-4 border-2 border-black">
               <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Classroom</h3>
-              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <img src={gclassroom} className="w-32 mx-auto" alt="google classroom"/>
               <p className="text-justify">Ruang kelas utama anda. Disini anda dapat memindahkan seluruh kegiatan di kelas menjadi daring. Tidak perlu repot mengisi absen, semua akan terekam secara otomatis.</p>
             </div>
             <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
               <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Drive</h3>
-              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <img src={gdrive} className="w-32 mx-auto" alt="google drive"/>
               <p className="text-justify">Perpustakaan untuk murid anda. Disini anda dapat memberikan modul, buku, bahkan video pembelajaran yang mampu meningkatkan keseruan belajar.</p>
             </div>
             <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
               <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Meet</h3>
-              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <img src={gmeet} className="w-32 mx-auto" alt="google meet"/>
               <p className="text-justify">Pengajaran tatap muka sekarang bisa dilakukan lewat layar gawai anda. Pembelajaran dapat dilakukan secara sinkron seperti di ruang kelas konvensional.</p>
             </div>
           </div>
@@ -81,12 +86,12 @@ const Index = ({ data, location }) => {
             <div className="hidden sm:grid"></div>
             <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
               <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Form</h3>
-              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <img src={gforms} className="w-24 mx-auto" alt="google form"/>
               <p className="text-justify">Tanpa menggunakan kertas, tanpa menggunakan pensil. Pengambilan nilai dapat anda lakukan menggunakan google form, tentunya secara aman dan bebas dari kecurangan.</p>
             </div>
             <div className="col-span-2 text-center p-8 space-y-4 border-2 border-black">
               <h3 className="md:text-3xl text-2xl text-center font-bold my-4" >Google Calendar</h3>
-              <img src={placeholder} className="block mx-auto" alt="placeholder"/>
+              <img src={gcalendar} className="w-32 mx-auto" alt="google calendar"/>
               <p className="text-justify">Jadwalkan seluruh kegiatan kelas secara terpadu. Siswa dapat memantau jadwal kelas,  batas akhir pengumpulan tugas, dan jadwal ujian tanpa repot.</p>
             </div>
             <div></div>
