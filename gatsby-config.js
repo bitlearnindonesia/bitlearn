@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bitlearn`,
     description: ``,
-    siteUrl: `https://bitlearn.com/`,
+    siteUrl: `https://bitlearn.id/`,
     social: {
       twitter: ``,
     },

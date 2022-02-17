@@ -103,23 +103,6 @@ const Index = ({ data, location }) => {
           </div>
           
         </div>
-
-        {/* Contact section */}
-        <div className="hidden sm:grid grid-cols-6 max-w-6xl px-6 pb-36 mx-auto">
-          <div className="col-span-3">
-            <h2 className="md:text-3xl text-2xl text-primary font-bold my-4">
-              Tertarik bekerja sama dengan kami?
-            </h2>
-            <ul>
-              <li>Figo Muhammad</li>
-              <li>+62 815 1702 1248</li>
-              <li>figomuhammad9@protonmail.com</li>
-            </ul>
-          </div>
-          <div className="col-span-3">
-
-          </div>
-        </div>
       </div>
       
     </Layout>

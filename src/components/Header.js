@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-import placeholder from '/src/images/placeholder.png'
+import logo from '/src/images/logo.png'
 
 const navigation = [
   { name: 'Layanan', to: '/#products', current: false },
@@ -21,11 +21,10 @@ export default function Header() {
         {({ open }) => (
           <>
             <div className="max-w-6xl mx-auto">
-              <div className="relative flex items-center justify-start h-16">
-
+              <div className="relative flex items-center justify-start h-24 px-2">
                 <div className="flex flex-1 sm:justify-start align-middle">
                   <div className="flex flex-1 items-center justify-start">
-                    <img src={placeholder} className="w-8 h-8 mx-4" alt="placeholder"/>
+                    <img src={logo} className="w-8 h-8 mx-4" alt="placeholder"/>
                     <Link to="/">
                       <p className="text-3xl font-bold">Bitlearn</p>
                     </Link>
