@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import logo from '/src/images/logo.png'
+import logo from '/src/images/logo-footer.svg'
 
 const Footer = () => {
   return (
@@ -14,9 +14,9 @@ const Footer = () => {
             Tertarik bekerja sama dengan kami?
           </h2>
           <ul>
-            <li>Figo Muhammad</li>
-            <li>+62 815 1702 1248</li>
-            <li>figomuhammad9@protonmail.com</li>
+            <li>M. Wierdy Bagus Nugrahaien</li>
+            <li>+62 878 8190 3463</li>
+            <li>wierdybagus@gmail.com</li>
           </ul>
         </div>
           <div className="col-span-3">
@@ -28,15 +28,15 @@ const Footer = () => {
           <ul className="sm:hidden col-span-2 max-w-xs mx-auto px-4 ">
             <li className="flex space-x-2 items-center">
               <FontAwesomeIcon icon={faPhone} />
-              <p>+62 815 1702 1248 - Figo</p>
+              <p>+62 878 8190 3463 - Wierdy</p>
             </li>
             <li className="flex space-x-2 items-center">
               <FontAwesomeIcon icon={faWhatsapp} />
-              <p>+62 815 1702 1248 - Figo</p>
+              <p>+62 878 8190 3463 - Wierdy</p>
             </li>
             <li className="flex space-x-2 items-center">
               <FontAwesomeIcon icon={faEnvelope} />
-              <p>bitlearn.indonesia@gmail.com</p>
+              <p>wierdybagus@gmail.com</p>
             </li>
           </ul>
           <img src={logo} className="col-span-2 w-36 sm:w-48 py-12 mx-auto sm:ml-0" alt="placeholder"/>

@@ -3,8 +3,7 @@ import Header from "../components/Header.js"
 import Footer from "../components/Footer.js"
 
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+const Layout = ({ children }) => {
 
   return (
     <body className="bg-white">
