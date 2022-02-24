@@ -7,7 +7,7 @@ import logo from '/src/images/logo-footer.svg'
 
 const Footer = () => {
   return (
-    <body className="" id="contact">
+    <body className="" id="kontak">
       <div className="hidden sm:grid grid-cols-6 max-w-6xl px-6 py-24 mx-auto">
         <div className="col-span-3">
           <h2 className="md:text-3xl text-2xl text-primary font-bold my-4">
