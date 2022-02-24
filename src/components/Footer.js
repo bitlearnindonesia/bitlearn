@@ -7,21 +7,24 @@ import logo from '/src/images/logo-footer.svg'
 
 const Footer = () => {
   return (
-    <body className="" id="kontak">
-      <div className="hidden sm:grid grid-cols-6 max-w-6xl px-6 py-24 mx-auto">
-        <div className="col-span-3">
-          <h2 className="md:text-3xl text-2xl text-primary font-bold my-4">
-            Tertarik bekerja sama dengan kami?
-          </h2>
-          <ul>
-            <li>M. Wierdy Bagus Nugrahaien</li>
-            <li>+62 878 8190 3463</li>
-            <li>wierdybagus@gmail.com</li>
-          </ul>
-        </div>
+    <body className="">
+      <div id="contact">
+        <div className="hidden sm:grid grid-cols-6 max-w-6xl px-6 py-24 mx-auto">
           <div className="col-span-3">
+            <h2 className="md:text-3xl text-2xl text-primary font-bold my-4">
+              Tertarik bekerja sama dengan kami?
+            </h2>
+            <ul>
+              <li>M. Wierdy Bagus Nugrahaien</li>
+              <li>+62 878 8190 3463</li>
+              <li>wierdybagus@gmail.com</li>
+            </ul>
+          </div>
+            <div className="col-span-3">
+          </div>
         </div>
       </div>
+      
       <div className="bg-accent2">
         <main className="max-w-6xl grid grid-cols-2 sm:grid-cols-6 p-6 mx-auto items-center">
           <div className="sm:hidden col-span-2 text-xl text-center font-bold py-4">Hubungi Kami</div>

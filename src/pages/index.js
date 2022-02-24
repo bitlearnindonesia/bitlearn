@@ -29,7 +29,7 @@ const Index = ({ data, location }) => {
               Kesulitan dalam mengoperasikan Google Education? Hubungi kami untuk mendapatkan bantuan profesional!
               </h2>
               <p className="text-sm sm:text-lg">Bitlearn dapat membantu anda untuk mengoperasikan Google Education. Mulai dari membagian materi, menjadwalkan pertemuan kelas, sampai asesmen pencapaian siswa dapat kami urus. Tanpa perlu repot mengurus semua itu, anda tinggal menyusun rencana pembelajaran dan kami yang lakukan sisanya.</p>
-              <button className="bg-primary hover:bg-secondary text-white text-md sm:text-md font-medium my-8 py-2 px-4 rounded-lg"><Link to="/#kontak">Hubungi kami</Link></button>
+              <button className="bg-primary hover:bg-secondary text-white text-md sm:text-md font-medium my-8 py-2 px-4 rounded-lg"><Link to="/#contact">Hubungi kami</Link></button>
             </div>
             <div className="col-span-2">
               <img src={cta} className="hidden sm:block w-full ml-auto" alt="cta"/>
