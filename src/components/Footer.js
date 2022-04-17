@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import logo from '/src/images/logo-footer.svg'
+import logo from '/src/images/logo-ack.png'
 
 const Footer = () => {
   return (
