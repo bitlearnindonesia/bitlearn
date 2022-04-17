@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-import logo from '/src/images/logo-header.svg'
+import logo from '/src/images/logo-header.png'
 
 const navigation = [
   { name: 'Layanan', to: '/#products', current: false },
